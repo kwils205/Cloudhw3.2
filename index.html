@@ -1,6 +1,6 @@
 <html>
 <body>
-<form method = "GET" action = >
+<form method = "GET" action = connect.php>
 $sql = "SELECT grades from hw3_database";
 $result = mysqli_query($conn,$sql);
 
@@ -11,8 +11,8 @@ While ($row = mysqli_fetch_assoc($result))
 mysqli_close($conn);
 
 ?>
-
-
+<label for= "Student ID" >Student ID:</label>
+<label for= "Grade">Grade:</label>
 
 </form>
 </body>
